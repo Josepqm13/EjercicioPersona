@@ -10,5 +10,6 @@ public class Main {
         p.calcularIMC();
         p.comprobarSexo();
         p.esMayorDeEdad();
+
     }
 }

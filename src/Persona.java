@@ -78,33 +78,6 @@ public class Persona {
         } else {
             System.out.println("Valor ingresado es incorrecto");
         }
-        /*if (sSexo == "H") {
-            System.out.println("Su genero es: " + sSexo);
-        }
-        else if (sSexo == "M") {
-            System.out.println("Su genero es: " + sSexo);
-        } else {
-            System.out.println("Valor ingresado es incorrecto");
-        }
-
-
-        if (sSexo!= "H" && sSexo!= "M") {
-            this.sSexo = "H";
-        }
-        else {this.sSexo = sSexo;
-        }
-
-        public String toString(){
-            String sSexo = "";
-                    if (this.sSexo == "H");
-            sSexo="Hombre";
-
-        }
-        else if {
-            sSexo ="Mujer";
-        }
-*/
-
     }
 }
 
