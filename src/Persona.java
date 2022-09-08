@@ -1,9 +1,10 @@
-import java.util.Scanner;
-
 public class Persona {
-    String sNombre;
-    int iEdad;
-    char sSexo;
+    private String sNombre;
+    private int iEdad;
+    private String sSexo;
+    private double dPeso;
+    private double dAltura;
+    //private double dIMC;
 
     public String getsNombre() {
         return sNombre;
@@ -21,11 +22,11 @@ public class Persona {
         this.iEdad = iEdad;
     }
 
-    public char getsSexo() {
+    public String getsSexo() {
         return sSexo;
     }
 
-    public void setsSexo(char sSexo) {
+    public void setsSexo(String sSexo) {
         this.sSexo = sSexo;
     }
 
@@ -45,20 +46,9 @@ public class Persona {
         this.dAltura = dAltura;
     }
 
-    public double getdIMC() {
-        return dIMC;
-    }
-
-    public void setdIMC(double dIMC) {
-        this.dIMC = dIMC;
-    }
-
-    double dPeso;
-    double dAltura;
-    double dIMC;
 
     public void calcularIMC () {
-        dIMC = dPeso / (dAltura * dAltura);
+        double dIMC = dPeso / (dAltura * dAltura);
 
         if (dIMC < 20) {
             System.out.println("El IMC es -1");
@@ -73,15 +63,21 @@ public class Persona {
     }
 
     public void esMayorDeEdad() {
-        boolean bEsMayor;
         if (iEdad>=18){
-            bEsMayor = true;
+            System.out.println("Es mayor de edad");
         } else
-            bEsMayor = false;
+        System.out.println("Es menor de edad");
 
     }
     public void comprobarSexo() {
-
+        if (sSexo == "H") {
+            System.out.println("Su genero es: " + sSexo);
+        }
+        else if (sSexo == "M") {
+            System.out.println("Su genero es: " + sSexo);
+        } else {
+            System.out.println("Valor ingresado es incorrecto");
+        }
         /*if (sSexo == "H") {
             System.out.println("Su genero es: " + sSexo);
         }
@@ -108,14 +104,6 @@ public class Persona {
             sSexo ="Mujer";
         }
 */
-        System.out.print("Ingrese sexo (h)ombre, (m)ujer");
-        while (sSexo!='h' && sSexo!='m') {
-            System.out.println(" ");
-            System.out.println("Solo h o m");
-break;
-        }
-
-
 
     }
 }
